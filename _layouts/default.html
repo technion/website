@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+    <head>
+      <meta charset="utf-8" />
+{% if page.needsframes %}
+      <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+{% endif %}
+{% if site.cssbuild == "prod" %}
+      <!-- AMP boilerplate -->
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <!--Import css files-->
+      <!-- Process to update imported styles:
+      * In _config.yml, set buildcss to dev
+      * Build jekyll
+      * Run node buildcss.js
+      * Compress: java -jar yuicompressor-2.4.8.jar _includes/un.styles.css  -o  _includes/un.min.styles.css
+      -->
+      <style amp-custom>
+      {% include un.min.styles.css %}
+      </style>
+{% else %}
+      <link rel="stylesheet" href="{{ site.produrl }}/assets/css/styles.css">
+{% endif %}
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="canonical" href="{{ site.produrl }}">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    </head>
+  <body>
+
+    {% include header.html %}
+
+        {{ content }}
+
+        <amp-analytics type="googleanalytics" id="analytics1">
+        <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-69505407-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+             }
+           }
+        }
+        </script>
+        </amp-analytics>
+  </body>
+
+</html>

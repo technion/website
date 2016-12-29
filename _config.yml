@@ -1,0 +1,27 @@
+---
+title: Lolware
+email: technion@lolware.net
+author: Technion
+keep_files: ["kerbal", "reactxss"]
+author_github: hugocarreira
+port: 4567
+host: 0.0.0.0
+description: |
+    Blogging on development and insecurities
+baseurl: "/"
+url: "http://lolware.net:4567"
+paginate: 6
+home_bgfile: somuchwin.png
+markdown: redcarpet
+highlighter: rouge
+redcarpet:
+  extensions: ["strikethrough", "tables", "fenced_code_blocks"]
+produrl: http://lolware.net:4567
+cssbuild: prod
+gems:
+  - jekyll-paginate
+  - redcarpet
+  - rouge
+exclude: ['vendor', 'node_modules', 'buildcss.js', 'yuicompressor-2.4.8.jar']
+sass:
+  sass_dir: _sass
