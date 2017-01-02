@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Shocking online security practices
-description: So apparently mwave actually think a reasonable method of running ecommerce is to simply ask for the logon to your online banking.
+title: mwave requests bank logins of customers 
+description: Apparently mwave actually think a reasonable method of running ecommerce is to simply ask for the logon to your online banking.
 fullview: true
 ---
 
-### Right when you thought security couldn't get any worse
+# Right when you thought security couldn't get any worse
 
 This blog will be short and sweet because a few images say it all.
 
@@ -27,7 +27,7 @@ Not only is it not a troll, it's well documented in their FAQ:
 
 The frustrating part is not that they do this. It's that they apply the charge to your card a day before giving you this prompt, leaving you begging for refunds when you refuse.
 
-Yes, I've spoken to them. They don't see an issue.
+Yes, I've spoken to them. They don't see an issue. Yes, mwave thinking requesting your bank login credentials is just a normal thing.
 
 ## Addenum
 

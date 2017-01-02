@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Intelligent Backend Routes with Rails and nginx
+description: How to avoid passing silly URLs to your backend
 fullview: true
 ---
 

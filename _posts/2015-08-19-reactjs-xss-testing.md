@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing ReactJS for XSS vulnerabilities
+description: A test hardness to smoketest ReactJS for XSS vulnerabilities
 fullview: true
 ---
 

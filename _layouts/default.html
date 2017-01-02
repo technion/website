@@ -19,7 +19,6 @@
       * In _config.yml, set buildcss to dev
       * Build jekyll
       * Run node buildcss.js
-      * Compress: java -jar yuicompressor-2.4.8.jar _includes/un.styles.css  -o  _includes/un.min.styles.css
       -->
       <style amp-custom>
       {% include un.min.styles.css %}
@@ -27,11 +26,53 @@
 {% else %}
       <link rel="stylesheet" href="{{ site.produrl }}/assets/css/styles.css">
 {% endif %}
-        <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="canonical" href="{{ site.produrl }}">
+      <link rel="canonical" href="{{ site.produrl }}{{ page.url }}">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+
+{% if page.description %}
+<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "{{ site.produrl }}{{ page.url }}",
+        "headline": "{{ page.title }}",
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.date }}",
+        "description": "{{ page.description }}",
+        "author": {
+          "@type": "Person",
+          "name": "Joshua Small"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Lolware",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.produrl }}/assets/images/somuchwin.png",
+            "width": 50,
+            "height": 60
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d86c84grgz45x.cloudfront.net/dalfschem.png",
+          "height": 800,
+          "width": 696
+        }
+      }
+
+</script>
+{% endif %}
+<script type="application/ld+json">
+{
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Lolware",
+      "alternateName": "Lolware",
+      "url": "https://lolware.net"
+}
+</script>
     </head>
   <body>
 
@@ -54,6 +95,8 @@
         }
         </script>
         </amp-analytics>
+    <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </body>
 
 </html>

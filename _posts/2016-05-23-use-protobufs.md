@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Use protobufs - now
+description: Benchmarking protobufs against JSON
 fullview: true
 ---
 

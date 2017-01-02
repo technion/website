@@ -6,6 +6,7 @@ keep_files: ["kerbal", "reactxss"]
 author_github: hugocarreira
 port: 4567
 host: 0.0.0.0
+destination: "/var/www/html"
 description: |
     Blogging on development and insecurities
 baseurl: "/"
@@ -16,12 +17,14 @@ markdown: redcarpet
 highlighter: rouge
 redcarpet:
   extensions: ["strikethrough", "tables", "fenced_code_blocks"]
-produrl: http://lolware.net:4567
+produrl: https://lolware.net
 cssbuild: prod
 gems:
   - jekyll-paginate
   - redcarpet
   - rouge
-exclude: ['vendor', 'node_modules', 'buildcss.js', 'yuicompressor-2.4.8.jar']
+  - jekyll-sitemap
+exclude: ['vendor', 'node_modules', 'buildcss.js', 'yuicompressor-2.4.8.jar',
+         'Gemfile', 'Gemfile.lock' ]
 sass:
   sass_dir: _sass

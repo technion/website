@@ -2,7 +2,7 @@ var uncss = require('uncss')
 var glob = require('glob')
 var fs = require('fs')
 
-var stylesheetLocation = '_site/assets/css/'
+var stylesheetLocation = '/var/www/html/assets/css/'
 var stylesheetSourceLocation = '_includes/'
 var stylesheetName = 'styles.css'
 
@@ -21,8 +21,10 @@ var jekyllUncss = function() {
       if (err) {
         console.log(err)
       }
-
-      fs.writeFileSync(stylesheetSourceLocation + 'un.' + stylesheetName, output)
+      var cleanoutput = output.replace(/!important/g, '');
+      fs.writeFileSync(stylesheetSourceLocation + 'un.' + stylesheetName, 
+          cleanoutput);
+      console.log("Please run: java -jar yuicompressor-2.4.8.jar _includes/un.styles.css  -o  _includes/un.min.styles.css");
     })
   })
 }

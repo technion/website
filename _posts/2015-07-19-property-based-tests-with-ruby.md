@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Property based tests, contracts with Ruby
+description: Property based tests, contracts with Ruby
 fullview: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fuzzing nginx - Hunting vulnerabilities with afl-fuzz
+description: Fuzzing nginx with afl-fuzz for vulnerabilities
 fullview: true
 ---
 
