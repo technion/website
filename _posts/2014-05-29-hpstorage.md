@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HP D2D / Storeonce Backdoor
+description: HP's D2D Backdoor passwords
 fullview: true
 ---
 

@@ -16,7 +16,7 @@ As silly as this is, I've now experienced setting up a website on S3, and a Clou
 Kids, don't use AMP. Do however, scroll past this placeholder:
 
 <amp-img
-    src="http://www.placehold.it/350x700"
+    src="/assets/images/placehold700.png"
     height="550"
     width="350"
     alt="A silly placeholder"

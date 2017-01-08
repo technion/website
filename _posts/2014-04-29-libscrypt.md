@@ -1,6 +1,7 @@
 ---
 layout: post
 title: libscrypt - password hashing library
+description: libscrypt - password hashing library
 fullview: true
 ---
 

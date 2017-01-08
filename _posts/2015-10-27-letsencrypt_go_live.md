@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let's Encrypt - It's happening
+description: Trialling early Ruby ACME client for Lets Encrypt
 fullview: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Taking the Matasano Crypto Challenge
+description: Blog on the process of taking the cryptopals / matasanto crypto chalenge
 fullview: true
 ---
 

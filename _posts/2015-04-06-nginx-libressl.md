@@ -1,6 +1,7 @@
 ---
 layout: post
 title: nginx - Built against LibreSSL
+description: nginx - Built against LibreSSL
 fullview: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  cPanel Wordpress version/vulnerability scanner
+description: cPanel Wordpress version/vulnerability scanner
 fullview: true
 ---
 

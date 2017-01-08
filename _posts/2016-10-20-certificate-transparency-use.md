@@ -2,7 +2,7 @@
 layout: post
 title: The improving state of SSL deployment
 fullview: true
-description: Certificate Transpaency gives us great new insights into the increasing deployment of SSL certificates
+description: Certificate Transparency monitoring service gives us great new insights into the increasing deployment of SSL certificates
 ---
 
 ## Increase in SSL use
