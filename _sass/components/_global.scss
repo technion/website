@@ -21,8 +21,6 @@ ul {
   &.browser-default {
     list-style-type: initial;
   }
-
-  list-style-type: none;
 }
 
 a {
@@ -47,9 +45,6 @@ a {
 
 ul {
   padding: 0;
-  li {
-    list-style-type: none;
-  }
 }
 
 // classic clearfix

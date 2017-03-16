@@ -4,6 +4,7 @@
     <head>
       <title>{{ page.title }}</title>
       <meta charset="utf-8" />
+      <meta name="google-site-verification" content="A49bqpeNUkd_XgQ6WKa0OW-Nf_obDgfIjJqj6tJlFjI" />
 {% if page.needsframes %}
       <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 {% endif %}
@@ -83,17 +84,17 @@
 
         <amp-analytics type="googleanalytics" id="analytics1">
         <script type="application/json">
-        {
-          "vars": {
-            "account": "UA-69505407-1"
-          },
-          "triggers": {
-            "trackPageview": {
-              "on": "visible",
-              "request": "pageview"
-             }
-           }
-        }
+{
+  "vars": {
+      "account": "UA-69505407-1"
+  },
+  "triggers": {
+      "trackPageview":{
+          "on": "visible",
+          "request": "pageview"
+      }
+  }
+}
         </script>
         </amp-analytics>
   </body>

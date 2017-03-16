@@ -609,9 +609,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-ul {
-  list-style-type: none; }
-
 a {
   color: #039be5;
   text-decoration: none;
@@ -619,8 +616,6 @@ a {
 
 ul {
   padding: 0; }
-  ul li {
-    list-style-type: none; }
 
 nav, .btn, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
