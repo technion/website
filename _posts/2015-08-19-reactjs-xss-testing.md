@@ -42,7 +42,11 @@ This single script will attempt to execute each element from the OWASP cheat she
 You can view it all on my Github.
 <a class="btn btn-default" href="https://github.com/technion/reactxss">https://github.com/technion/reactxss</a>
 
-The current code base is also running live at [https://lolware.net/reactxss/index.html](https://lolware.net/reactxss/index.html). No, it doesn't look like much. That's a TODO.
+## Update
+
+This code has been overhauled for React 16. We've also moved to Webpack and Typescript. It sounds like framework churn - but Typescript really is more maintainable even for code this small.
+
+The current code base is also running live at [http://lolware-content.s3-website-ap-northeast-1.amazonaws.com/reactxss/](http://lolware-content.s3-website-ap-northeast-1.amazonaws.com/reactxss/). No, it doesn't look like much. That's still a TODO.
 
 ## Conclusion
 

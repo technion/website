@@ -2,7 +2,7 @@
 title: Lolware
 email: technion@lolware.net
 author: Technion
-keep_files: ["kerbal", "reactxss"]
+keep_files: ["kerbal", ".well-known"]
 author_github: hugocarreira
 port: 4567
 host: 0.0.0.0
@@ -19,7 +19,7 @@ redcarpet:
   extensions: ["strikethrough", "tables", "fenced_code_blocks"]
 produrl: https://lolware.net
 cssbuild: prod
-gems:
+plugins:
   - jekyll-paginate
   - redcarpet
   - rouge
