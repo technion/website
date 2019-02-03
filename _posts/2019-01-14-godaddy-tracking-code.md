@@ -20,9 +20,23 @@ I've built an empty website and copied the tracking code onto it. You can find t
 
 The good news is, uBlock blocks this tracking by default. By disabling uBlock, you can get a view of exactly what this script is doing. You can see the callout in the network monitor below, along with the long list of information it provides.
 
+<amp-img alt="Network monitor on GoDaddy tracking"
+    src="/assets/images/trackingsadness1.jpg"
+    height="622"
+    width="1905"
+    layout="responsive"
+    >
+</amp-img>
+
 It's obvious a lot of this is performance related, but at this point, I can't account for every parameter.
-![Network viewer with tracking code](/assets/images/trackingsadness1.jpg)
-![Tracking Parameters](/assets/images/trackingsadness2.jpg)
+
+<amp-img alt="Tracking Parameters"
+    src="/assets/images/trackingsadness2.jpg"
+    height="624"
+    width="821"
+    layout="responsive"
+    >
+</amp-img>
 
 # Cleanup
 
@@ -42,7 +56,13 @@ This acheives quite a bit on its own.
 
 Javascript gets a lot of crap, but it doesn't get nearly enough crap specifically about the IFFE. Refactoring to remove the outer IIFE makes the code a lot more readable. It also moves all the functions to the global space. You generally don't want that, but for us, it means we can access everything directly from the browser. Below you can see that the entire codebase is about exporting three different functions, noting we just wrote a() and b() ourselves.
 
-![Exported functions](/assets/images/trackingsadness3.jpg)
+<amp-img alt="Exported functions"
+    src="/assets/images/trackingsadness3.jpg"
+    height="574"
+    width="833"
+    layout="responsive"
+    >
+</amp-img>
 
 # Disecting the remaining code
 
