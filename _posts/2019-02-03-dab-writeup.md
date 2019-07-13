@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DAB Security Assessment
-description: Hackthebox "dab" writeup
+title: Hack The Box DAB Writeup Security Assessment
+description: Hack the box 'DAB' writeup
 fullview: true
 ---
 

@@ -65,7 +65,7 @@ Successfully scanned 217 URLs
 
 # Phishing kits - and answers
 
-The majority of the "interesting" URLs scanned, based on filenames at least, appear to be the zip files common phishing kits are distributed in. However, more interesting to us is the list of filenames that common phishing kits apparently store captured passwords in. Because it turns out that yes,
+The majority of the "interesting" URLs scanned, based on filenames at least, appear to be the zip files common phishing kits are distributed in. However, more interesting to us is the list of filenames that common phishing kits apparently store captured passwords in. Whilst the attacker themselves told us they had a phishing site, it's this scan that helped us see that melog-india.txt is apparently a known place to dump credentials. Because it turns out that yes,
 
 ```
 $ curl https://xxxx.000webhostapp.com/GoogleDocs/melog-india.txt
