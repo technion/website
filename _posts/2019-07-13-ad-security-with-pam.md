@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing PAM with JEA 
+title: Secure Privileged Active Directory management with PAM and JEA
 description: Active Directory Domain Just Enough Administration and Privileged Administration
 fullview: true
 ---
